@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#272727">
+
+    <!-- 상위 10개의 결과만 표시되는 것 알리기 -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상위 50개의 검색결과만 표시됩니다!"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <!-- 리스트뷰 레이아웃 설정 -->
+    <ListView
+        android:id="@+id/listviews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView"
+        android:dividerHeight="2dp"
+        android:divider="@color/mr_cast_route_divider_dark"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>

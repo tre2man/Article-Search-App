@@ -1,0 +1,4 @@
+<resources>
+    <!-- 어플의 이름 정하기 -->
+    <string name="app_name">논문 검색기</string>
+</resources>

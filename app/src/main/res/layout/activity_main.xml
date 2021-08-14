@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#272727">
+
+    <!-- 메인 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="논문을 검색하세요."
+            android:textColorHint="#555555"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"/>
+
+        <!-- 버튼은 커스텀한 버튼 테마로 통일 -->
+        <Button
+            android:id="@+id/Normalsearch"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="단순 검색"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonshape_noclick"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Detailsearch"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/buttonshape_noclick"
+        android:text="상세검색하기"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle"  android:layout_height="match_parent" android:layout_width="match_parent">
+    <!-- 버튼 디자인을 직접 구성했습니다. -->
+    <!-- 선택된 버튼이 아닐 경우 및 일반적인 버튼의 디자인 -->
+    <corners
+        android:radius="36dp"
+        />
+    <solid
+        android:color="#272727"
+        />
+    <padding
+        android:left="0dp"
+        android:top="0dp"
+        android:right="0dp"
+        android:bottom="0dp"
+        />
+    <size
+        android:width="200dp"
+        android:height="50dp"
+        />
+    <stroke
+        android:width="2dp"
+        android:color="#FFFFFF"
+        />
+</shape>

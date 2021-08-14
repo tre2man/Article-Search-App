@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#272727">
+
+    <!-- 선택한 데이터의 결과값을 보여주는 레이아웃
+         프레임 레이아웃을 이용해 입력값에 따라서 보여주는 결과를 다르게 한다. -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 논문결과를 출력할 레이아웃 -->
+        <LinearLayout
+            android:id="@+id/journals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_margin="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/journal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/journalname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF"
+                android:autoLink="web"/>
+
+        </LinearLayout>
+
+        <!-- 참고문헌 결과를 출력할 레이아웃 -->
+        <LinearLayout
+            android:id="@+id/references"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/reference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_margin="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

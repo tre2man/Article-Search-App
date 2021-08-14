@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- 공유 버튼 추가를 위한 레이아웃 -->
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/share"
+        android:title="공유하기"
+        app:showAsAction="always"/>
+
+</menu>

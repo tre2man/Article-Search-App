@@ -1,0 +1,10 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- 어플 기본 색상을 검은색 계열로 변경 -->
+        <item name="colorPrimary">#272727</item>
+        <item name="colorPrimaryDark">#171717</item>
+        <item name="colorAccent">#4C4C4C</item>
+    </style>
+
+</resources>
