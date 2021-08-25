@@ -23,14 +23,14 @@ import org.xmlpull.v1.XmlPullParserFactory;
 public class ResultActivity<DataVector> extends AppCompatActivity {
 
     //각 항목에 대한 결과값을 저장할 수 있는 어레이 자료형 선언
-    ArrayList<String> JournalArray = new ArrayList<String>();
-    ArrayList<String> JournalNameArray = new ArrayList<String>();
-    ArrayList<String> YearArray = new ArrayList<String>();
-    ArrayList<String> CategoryVector = new ArrayList<String>();
-    ArrayList<String> TitleArray = new ArrayList<String>();
-    ArrayList<String> AuthorArray = new ArrayList<String>();
-    ArrayList<String> UrlArray = new ArrayList<String>();
-    ArrayList<String> referenceArray = new ArrayList<String>();
+    ArrayList<String> JournalArray = new ArrayList<>();
+    ArrayList<String> JournalNameArray = new ArrayList<>();
+    ArrayList<String> YearArray = new ArrayList<>();
+    ArrayList<String> CategoryVector = new ArrayList<>();
+    ArrayList<String> TitleArray = new ArrayList<>();
+    ArrayList<String> AuthorArray = new ArrayList<>();
+    ArrayList<String> UrlArray = new ArrayList<>();
+    ArrayList<String> referenceArray = new ArrayList<>();
 
     ResultClass CollectResultClass = new ResultClass();
 
@@ -50,7 +50,7 @@ public class ResultActivity<DataVector> extends AppCompatActivity {
     String institution = "";
     String affiliation = "";
     String Adress = "&remoteAddr=112.158.203.34&remoteHost=112.158.203.34&referer=&displayCount=50";
-    String key = "67462000";
+    String key = "";
     String url = "";
 
     @Override
@@ -68,6 +68,8 @@ public class ResultActivity<DataVector> extends AppCompatActivity {
 
         dateFrom = ResultClass.journalStartyear;
         dateTo = ResultClass.journalLastyear;
+
+        key = getString(R.string.keyValue);
 
         //논문, 참고문헌 검색의 url 합성식을 구분해야 한다.
         if(ResultClass.category.equals("논문")) {
