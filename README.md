@@ -8,6 +8,11 @@
 - **xmlpullparser**를 사용하여 데이터 파싱
 - 블랙 테마 및 공유 기능
 
+## 동작 사진
+<img src = 1.jpg height="600px"></img>
+<img src = 2.jpg height="600px"></img>
+<img src = 3.jpg height="600px"></img>
+
 ## 나중에 손볼 기능(2020-06-21 기준)
 
 - 최신 머터리얼 디자인 적용
