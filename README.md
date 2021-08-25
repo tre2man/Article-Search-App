@@ -9,9 +9,9 @@
 - 블랙 테마 및 공유 기능
 
 ## 동작 사진
-<img src = 1.jpg height="400px"></img>
-<img src = 2.jpg height="400px"></img>
-<img src = 3.jpg height="400px"></img>
+<img src = 1.jpg height="500px"></img>
+<img src = 2.jpg height="500px"></img>
+<img src = 3.jpg height="500px"></img>
 
 ## 나중에 손볼 기능(2020-06-21 기준)
 
