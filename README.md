@@ -5,6 +5,7 @@
 # Assignment : 최종 
 
 ## 기능 설명
+- KCI api를 사용한 논문 검색 기능
 - **xmlpullparser**를 사용하여 데이터 파싱
 - 블랙 테마 및 공유 기능
 
