@@ -44,9 +44,9 @@ public class ItemListViewClass extends BaseAdapter {
         }
 
         //텍스트뷰 변수 선언한다.
-        TextView title = (TextView) view.findViewById(R.id.title);
-        TextView author = (TextView) view.findViewById(R.id.author);
-        TextView institution = (TextView) view.findViewById(R.id.institution);
+        TextView title = view.findViewById(R.id.title);
+        TextView author = view.findViewById(R.id.author);
+        TextView institution = view.findViewById(R.id.institution);
 
         //ItemListClass에 리스트에 해당하는 변수를 저장한다.
         ItemListClass itemListClass = getItem(pos);

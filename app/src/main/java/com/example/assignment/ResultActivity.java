@@ -108,7 +108,7 @@ public class ResultActivity<DataVector> extends AppCompatActivity {
         }
 
         //리스트 뷰 사용하기(정의하기)
-        ListView listView = (ListView) findViewById(R.id.listviews);
+        ListView listView = findViewById(R.id.listviews);
         ItemListViewClass itemListViewClass = new ItemListViewClass();
 
         //논문 검색할 경우와 참고문헌 검색할 경우를 나누어서 리스트뷰에 대입한다.
@@ -128,20 +128,17 @@ public class ResultActivity<DataVector> extends AppCompatActivity {
         listView.setAdapter(itemListViewClass);
 
         //리스트뷰에 있는 항목을 클릭했을 경우에?
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //DetailActivity로 보내기 위한 준비
-                Intent intent = new Intent(getApplicationContext(), DetailActivity.class);
+        listView.setOnItemClickListener((parent, view, position, id) -> {
+            //DetailActivity로 보내기 위한 준비
+            Intent intent1 = new Intent(getApplicationContext(), DetailActivity.class);
 
-                //전송할 클래스에 결과값 클래스를 대입하기
-                CollectResultClass.type = ResultClass.category;
+            //전송할 클래스에 결과값 클래스를 대입하기
+            CollectResultClass.type = ResultClass.category;
 
-                //결과값과 선택한 항목이 몇 번째인지를 DetailActivity로 전송한다.
-                intent.putExtra("result", CollectResultClass );
-                intent.putExtra("num", position);
-                startActivity(intent);
-            }
+            //결과값과 선택한 항목이 몇 번째인지를 DetailActivity로 전송한다.
+            intent1.putExtra("result", CollectResultClass );
+            intent1.putExtra("num", position);
+            startActivity(intent1);
         });
     }
 
@@ -162,7 +159,7 @@ public class ResultActivity<DataVector> extends AppCompatActivity {
             //xml 파싱은 시작태그, 종료태그, 내용태그를 구분하는 것이 기본이다.
             //다음 태그로 넘어갈 때 while문을 한번 돌게 된다.
             //원하는 시작태그가 나오면 그 태그에 맞는 boolean을 true로 해준다.
-            //목표한 태그가 true값을 가지게 되면 내용태그(내용)를 백터에 추가한다.
+            //목표한 태그가 true값을 가지게 되면 내용태그(내용)를 어레이리스트에 추가한다.
 
             try{
                 Apiurl = new URL(url);

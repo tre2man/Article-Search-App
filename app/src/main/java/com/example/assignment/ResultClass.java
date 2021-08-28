@@ -8,11 +8,11 @@ import java.util.ArrayList;
 
 public class ResultClass implements Serializable {
     public String type;
-    public ArrayList<String> JournalArray = new ArrayList<String>();
-    public ArrayList<String> JournalNameArray = new ArrayList<String>();
-    public ArrayList<String> YearArray = new ArrayList<String>();
-    public ArrayList<String> CategoryVector = new ArrayList<String>();
-    public ArrayList<String> TitleArray = new ArrayList<String>();
-    public ArrayList<String> AuthorArray = new ArrayList<String>();
-    public ArrayList<String> UrlArray = new ArrayList<String>();
+    public ArrayList<String> JournalArray = new ArrayList<>();
+    public ArrayList<String> JournalNameArray = new ArrayList<>();
+    public ArrayList<String> YearArray = new ArrayList<>();
+    public ArrayList<String> CategoryVector = new ArrayList<>();
+    public ArrayList<String> TitleArray = new ArrayList<>();
+    public ArrayList<String> AuthorArray = new ArrayList<>();
+    public ArrayList<String> UrlArray = new ArrayList<>();
 }

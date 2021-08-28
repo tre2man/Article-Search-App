@@ -81,7 +81,9 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:outlineAmbientShadowColor="#FFFFFF"
-                    android:outlineSpotShadowColor="#FFFFFF"/>
+                    android:outlineSpotShadowColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
 
                 <EditText
                     android:id="@+id/journaleditText1"
@@ -107,7 +109,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="#FFFFFF"/>
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
 
                 <EditText
                     android:id="@+id/journaleditText2"
@@ -133,7 +137,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textColor="#FFFFFF"/>
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
 
                 <EditText
                     android:id="@+id/journaleditText3"
@@ -214,16 +220,16 @@
         <!-- 참고문헌 검색 -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
             android:id="@+id/reference"
             android:visibility="invisible">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="10dp">
+                android:layout_width="400px"
+                android:layout_height="match_parent"
+                android:weightSum="4"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -232,104 +238,103 @@
                     android:textSize="20dp"
                     android:layout_weight="1"
                     android:layout_margin="10dp"
-                    android:textColor="#FFFFFF">
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textAlignment="center">
                 </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="저자명 : "
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textAlignment="center">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="발행기관명 : "
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textAlignment="center">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="연도 : "
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"
+                    android:textColor="#FFFFFF"
+                    android:gravity="center"
+                    android:textAlignment="center">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4">
 
                 <EditText
                     android:id="@+id/referenceName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName"
                     android:hint="검색어를 입력하세요."
+                    android:inputType="textPersonName"
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#555555"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="10dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="저자명 : "
-                    android:textSize="20dp"
-                    android:layout_margin="10dp"
-                    android:textColor="#FFFFFF">
-                </TextView>
+                    android:textColorHint="#555555"
+                    android:layout_margin="10dp"/>
 
                 <EditText
                     android:id="@+id/referenceAuthor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:hint="검색어를 입력하세요."
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#555555"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="10dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="발행기관명 : "
-                    android:textSize="20dp"
-                    android:layout_margin="10dp"
-                    android:textColor="#FFFFFF">
-                </TextView>
+                    android:textColorHint="#555555"
+                    android:layout_margin="10dp"/>
 
                 <EditText
                     android:id="@+id/referenceInstitution"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="textPersonName"
                     android:hint="검색어를 입력하세요."
                     android:textColor="#FFFFFF"
-                    android:textColorHint="#555555"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_margin="10dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="연도 : "
-                    android:textSize="20dp"
-                    android:layout_margin="10dp"
-                    android:textColor="#FFFFFF">
-                </TextView>
+                    android:textColorHint="#555555"
+                    android:layout_margin="10dp"/>
 
                 <EditText
                     android:id="@+id/referenceYear"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
+                    android:layout_weight="1"
                     android:ems="10"
                     android:inputType="number"
                     android:hint="검색어를 입력하세요."
                     android:textColor="#FFFFFF"
                     android:textColorHint="#555555"
-                    android:maxLength="4"/>
+                    android:maxLength="4"
+                    android:layout_margin="10dp"/>
 
             </LinearLayout>
 

@@ -29,8 +29,8 @@ public class DetailActivity extends AppCompatActivity {
         int position = (Integer) intent.getSerializableExtra("num");
 
         //리니어 레이아웃 변수를 선언한다.
-        LinearLayout journals = (LinearLayout)findViewById(R.id.journals);
-        LinearLayout references = (LinearLayout)findViewById(R.id.references);
+        LinearLayout journals = findViewById(R.id.journals);
+        LinearLayout references = findViewById(R.id.references);
 
         if(resultClass.type.equals("논문")) {
             //논문 정보를 표시할경우
@@ -40,12 +40,12 @@ public class DetailActivity extends AppCompatActivity {
             references.setVisibility(View.INVISIBLE);
 
             //텍스트뷰 변수 선언
-            TextView title = (TextView) findViewById(R.id.title);
-            TextView author = (TextView) findViewById(R.id.author);
-            TextView journal = (TextView) findViewById(R.id.journal);
-            TextView journalname = (TextView) findViewById(R.id.journalname);
-            TextView year = (TextView) findViewById(R.id.year);
-            TextView url = (TextView) findViewById(R.id.url);
+            TextView title = findViewById(R.id.title);
+            TextView author = findViewById(R.id.author);
+            TextView journal = findViewById(R.id.journal);
+            TextView journalname = findViewById(R.id.journalname);
+            TextView year = findViewById(R.id.year);
+            TextView url = findViewById(R.id.url);
 
             //텍스트뷰에 들어갈 내용 채우기
             title.setText(resultClass.TitleArray.get(position));
@@ -66,7 +66,7 @@ public class DetailActivity extends AppCompatActivity {
             references.setVisibility(View.VISIBLE);
 
             //텍스트뷰 변수 선언 및 내용 채우기
-            TextView reference = (TextView) findViewById(R.id.reference);
+            TextView reference = findViewById(R.id.reference);
             reference.setText(resultClass.JournalArray.get(position));
 
             //참고문헌 제목을 공유한다.
